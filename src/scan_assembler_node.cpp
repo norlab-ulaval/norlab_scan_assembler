@@ -107,6 +107,7 @@ int main(int argc, char**argv)
         rclcpp::spin_some(node);
         loopRate.sleep();
     }
+    rclcpp::shutdown();
 
     return 0;
 }
